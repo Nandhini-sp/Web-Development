@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course</title>
+    <style>
+        h1{
+            background-color: orchid !important;
+            
+        }
+        .para{
+            background-color: orangered;
+            color:white;
+            padding: 30px;
+            margin: 50px;
+        }
+        h2{
+            text-align: center;
+            color: blue;
+            padding-top: 10px;
+        }
+        .container{
+            background-color: rgb(230, 225, 225);
+        
+        }
+        .btn{
+            background-color: blueviolet;
+            color: white;
+            padding: 5px;
+        }
+        label{
+            display:inline-block;
+            width: 100px;
+            text-align: right;
+            padding-right:50px; 
+            font-size: 18px;  
+        }
+         /* table{
+                border-spacing: 15px;
+            } */
+            table,th,td{
+                border-collapse: collapse;
+            }
+            thead,th,tr{
+                padding: 20px;
+            }
+            th:nth-child(even){
+                background-color: beige;
+            }
+            td:nth-child(even){
+                background-color: aqua;
+            }
+            tr:nth-child(odd){
+                background-color: bisque;
+            }
+    
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="background-color:aqua !important;">Welcome to HTML Course</h1>
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nisi suscipit hic rem vel, numquam nemo fugiat voluptatum esse ut odio sunt doloribus accusantium maiores incidunt accusamus at officia quos.
+    </p>
+    <p class="para">
+        This is a sample paragraph
+    </p>
+
+    <!-- 1. Inline   1st priority
+         2. External 2nd Priority
+         3. Internl  3rd Priority 
+    -->
+    <h1>Form</h1>
+
+    
+    <div class="container">
+    <h2>Student Registartion Form</h2>
+    <form action="">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter Your first name" ><br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter your last name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="it should contain @"><br><br>
+
+        <label for="mbl">Mobile:</label>
+        <input type="number" name="mobile" id="mbl" placeholder="only 10 digits are allowed"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="Female">Female</label><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob"><br><br>
+
+        <label>Address:</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city"><br><br>
+
+        <label for="apin">Area Pincode:</label>
+        <input type="number" name="pin" id="pin"><br><br>
+
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state"><br><br>
+
+        <label>Qulification:</label>
+        <select name="Select Qualifiction" id="cars" style="width: 200px;">
+            <option value="Select Qualification">Select Qualification</option>
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+            <option value="degree">Degree</option>
+            <option value="mdegree">Master Degree</option>
+        </select>   <br><br>
+        
+        <label>Specialization:</label>
+        <input type="checkbox" name="dept" id="dept1" value="computer science" checked>
+        <label for="dept1">Computer Science</label> 
+        
+        <input type="checkbox" name="dept" id="dept2" value="information technology">
+        <label for="dept2">Information Technology</label> 
+
+        <input type="checkbox" name="dept" id="dept3" value="computer architecture">
+        <label for="dept3">Computer Architecture</label> <br><br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd"><br><br>
+
+        <input type="button" value="Registerted" class="btn" >    
+
+        </form>
+
+        <h1>Table</h1>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Day/Time</th>
+                    <th>10.00 - 11.00</th>
+                    <th>11.00 - 12.00</th>
+                    <th>12.00 - 12.50</th>
+                    <th>12.50 - 01.50</th>
+                    <th>01.50 - 02.50</th>
+                    <th>02.50 - 03.00</th>
+                    <th>03.00 - 04.00</th>
+                    <th>04.00 - 05.00</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>MONDAY</td>
+                    <td>PC1</td>
+                    <td>EEC</td>
+                    <td rowspan="6" >LUNCH BREAK</td>
+                    <td>BEC</td>
+                    <td>WPD</td>
+                    <td>B</td>
+                    <td colspan="2">EEC(B3)</td>
+                </tr>
+                <tr>
+                    <td>TUESDAY</td>
+                    <td>PC1</td>
+                    <td>EEC</td>
+                    <td>BEC</td>
+                    <td>WPD</td>
+                    <td>R</td>
+                    <td colspan="2">BEC(B3)</td>
+                </tr>
+                <tr>
+                    <td>WEDNESDAY</td>
+                    <td>PC1</td>
+                    <td>MATHS</td>
+                    <td>BEC</td>
+                    <td>CPH</td>
+                    <td></td>
+                    <td colspan="2">PC1(B3)</td>
+                </tr>
+                <tr>
+                    <td>THURSDAY</td>
+                    <td>MATHS</td>
+                    <td>EEC</td>
+                    <td colspan="2">MATHS TU(B3)</td>
+                    <td>A</td>
+                    <td colspan="2">WPD(B3)</td>
+                </tr>
+                <tr>
+                    <td>FRIDAY</td>
+                    <td>MATHS</td>
+                    <td>EEC</td>
+                    <td colspan="2">MICRO(B3)</td>
+                    <td>K</td>
+                    <td  colspan="2">CPH(B3)</td>
+                </tr>
+                <tr>
+                    <td>SATURDAY</td>
+                    <td>MATHS</td>
+                    <td>CPH</td>
+                    <td colspan="2">MATHS TU(B3)</td>
+                    <td>SHORT</td>
+                    <td colspan="2">WPD(B3)</td>
+                </tr>
+    
+            </tbody>
+    
+        </table>
+
+</body>
+</html>
